@@ -10,6 +10,7 @@ pipeline {
      stage('run Server') {
         steps {
                 sh '''
+                javac src/TextMessage.java
                 javac src/Server.java
                 java src/Server
                 '''
