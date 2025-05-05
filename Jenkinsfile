@@ -10,6 +10,7 @@ pipeline {
      stage('run Server') {
         steps {
                 sh '''
+                //Здесь нужно переработать адресацию. Класс TextMessage компилируется в src. Нужно обеспечить к нему доступ из Server
                 javac src/TextMessage.java
                 javac src/Server.java
                 java src/Server
