@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                
                 javac src/ShowMessage.java
-                java src/ShowMessage
+                java src.ShowMessage
                 '''
             }
         }  
