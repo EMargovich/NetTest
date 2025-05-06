@@ -22,6 +22,7 @@ pipeline {
                 sh '''
                
                 javac TextMessage.java
+                javac Server.java
               
                
                
