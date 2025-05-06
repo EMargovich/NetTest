@@ -12,7 +12,7 @@ pipeline {
             script {
                 sh '''
                
-                javac Bubble.java
+                javac src\Bubble.java
                
                 '''
             }
@@ -23,7 +23,7 @@ pipeline {
         steps {
                 sh '''
                 
-                java Bubble
+                java src.Bubble
                 '''
             }
         }  
