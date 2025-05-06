@@ -9,6 +9,7 @@ pipeline {
   stages {
      stage('run Server') {
         steps {
+            script {
                 sh '''
                
                 javac src/TextMessage.java
@@ -17,6 +18,7 @@ pipeline {
                 '''
             }
         }  
+     }
 
     stage('run Client') {
         steps {
