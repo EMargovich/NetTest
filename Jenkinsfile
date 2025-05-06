@@ -21,7 +21,7 @@ pipeline {
             script {
                 sh '''
                
-                javac src/*.java
+                javac *.java
               
                
                
@@ -35,7 +35,7 @@ pipeline {
         steps {
                 sh '''
                 java Bubble
-                java src.Server
+                java Server
                 '''
             }
         }  
