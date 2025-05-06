@@ -41,7 +41,6 @@ pipeline {
         steps {
                 sh '''
                 java -cp src Bubble
-                java -cp src Server
                 java -cp src Client
                 '''
             }
