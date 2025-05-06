@@ -14,13 +14,21 @@ pipeline {
                
                 javac src/Bubble.java
                 javac -d src src/TextMessage.java
-                javac src/Server.java
+               
                
                 '''
             }
         }  
      }
 
+    stage('javac Server') {
+        steps {
+                sh '''
+                javac src/Server.java
+                '''
+            }
+        }  
+      
     stage('java') {
         steps {
                 sh '''
