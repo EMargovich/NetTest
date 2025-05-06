@@ -7,23 +7,23 @@ pipeline {
 
 
   stages {
-     stage('run Server') {
+     stage('javac') {
         steps {
             script {
                 sh '''
                
-                javac src/ShowMessage.java
-                java src.ShowMessage
+                javac Bubble.java
+               
                 '''
             }
         }  
      }
 
-    stage('run Client') {
+    stage('java') {
         steps {
                 sh '''
-                javac src/Client.java
-                java src/Client
+                
+                java Bubble
                 '''
             }
         }  
