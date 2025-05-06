@@ -21,9 +21,9 @@ pipeline {
             script {
                 sh '''
                
-                javac TextMessage.java
-                javac Server.java
-                javac Client.java
+                javac src/TextMessage.java
+                javac -cp src src/Server.java
+                javac -cp src src/Client.java
               
                
                
@@ -37,8 +37,8 @@ pipeline {
         steps {
                 sh '''
                 java Bubble
-                java Server
-                java Client
+                java src/Server
+                java src/Client
                 '''
             }
         }  
