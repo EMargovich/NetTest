@@ -7,6 +7,15 @@ pipeline {
 
 
   stages {
+
+    stage('check dir') {
+       steps {
+        echo 'Start'
+        sh 'dir'
+  
+      }
+    }
+      
      stage('javac') {
         steps {
             script {
