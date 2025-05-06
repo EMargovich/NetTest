@@ -23,7 +23,7 @@ pipeline {
         steps {
                 sh '''
                 
-                java src.Bubble
+                java Bubble
                 '''
             }
         }  
