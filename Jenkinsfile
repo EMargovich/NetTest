@@ -14,7 +14,7 @@ pipeline {
                
                 javac src/Bubble.java
                 javac src/TextMessage.java
-                src/Server.java
+                javac src/Server.java
                
                 '''
             }
