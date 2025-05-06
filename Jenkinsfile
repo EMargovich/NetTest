@@ -21,7 +21,7 @@ pipeline {
             script {
                 sh '''
                
-                javac *.java
+                javac TextMessage.java
               
                
                
