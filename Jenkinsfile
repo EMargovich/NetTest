@@ -12,6 +12,10 @@ pipeline {
        steps {
         echo 'Start'
         sh 'dir'
+        sh '''
+        cd src
+        dir
+        '''
   
       }
     }
@@ -22,7 +26,7 @@ pipeline {
                 sh '''
                
                 javac src/TextMessage.java
-                javac -cp src src/Server.java
+                javac -d src -cp src src/Server.java
                 javac -cp src src/Client.java
               
                
