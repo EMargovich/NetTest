@@ -37,7 +37,7 @@ pipeline {
         steps {
                 sh '''
                 java Bubble
-                java src/Server
+                java src.Server
                 java src/Client
                 '''
             }
