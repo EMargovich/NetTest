@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                
                 javac src/Bubble.java
-                javac src/TextMessage.java
+                javac -d src src/TextMessage.java
                 javac src/Server.java
                
                 '''
