@@ -13,6 +13,8 @@ pipeline {
                 sh '''
                
                 javac src/Bubble.java
+                javac src/TextMessage.java
+                src/Server.java
                
                 '''
             }
@@ -22,8 +24,8 @@ pipeline {
     stage('java') {
         steps {
                 sh '''
-                
                 java Bubble
+                java Server
                 '''
             }
         }  
