@@ -12,7 +12,7 @@ pipeline {
             script {
                 sh '''
                
-                javac src/*
+                javac src/*.java
               
                
                
