@@ -12,9 +12,8 @@ pipeline {
             script {
                 sh '''
                
-                javac src/TextMessage.java
-                javac src/Server.java
-                java src/Server
+                javac src/ShowMessage.java
+                java src/ShowMessage
                 '''
             }
         }  
