@@ -23,6 +23,7 @@ pipeline {
                
                 javac TextMessage.java
                 javac Server.java
+                javac Client.java
               
                
                
@@ -37,6 +38,7 @@ pipeline {
                 sh '''
                 java Bubble
                 java Server
+                java Client
                 '''
             }
         }  
