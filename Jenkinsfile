@@ -40,8 +40,8 @@ pipeline {
     stage('java') {
         steps {
                 sh '''
-                java -cp src Bubble
-                java -cp src Client
+               
+                java -cp src Server
                 '''
             }
         }  
