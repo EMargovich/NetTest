@@ -41,7 +41,7 @@ pipeline {
         steps {
                 sh '''
                
-                java -cp src Server
+                java -cp src Client
                 '''
             }
         }  
