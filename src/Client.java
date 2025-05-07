@@ -6,14 +6,14 @@ import java.net.*;
 public class Client {
     public static void main(String[] arg) {
         try {
-            String message = " ";
-            String name = " ";
+            String message = "This is my message!";
+            String name = "I Jack";
             System.out.print("Пожалуйста, введите имя: ");
-            name = getString();
+           // name = getString();
 // Создать объект TextMessage
             TextMessage myTextMessage = new TextMessage(name);
             System.out.print("сообщение: ");
-            message = getString();
+          //  message = getString();
 // Использовать сеттер для задания TextMessage
             myTextMessage.setTextMessage(message);
 // Создать подключение к сокету
